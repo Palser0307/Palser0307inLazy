@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Glasses for protanomal</title>
+		<link type="text/css" href="./style.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, inital-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="./function2.js"></script>
+	</head>
+	
+	<body>
+        <a href="./">トップページへ</p>
+		<h1>Glasses for protanomal</h1>
+		<div id="s">
+			<!-- スライダー1 -->
+			<input type="range" min="0" max="1" step="0.01" value="0.40" id="s-slider">
+			<!-- スライダーの値を表示 -->
+			<p>s value:<span class="s-slider_value">0.40</span></p>
+		</div>
+		<div id="v">
+			<!-- スライダー2 -->
+			<input type="range" min="0" max="1" step="0.01" value="0.25" id="v-slider">
+			<!-- スライダーの値を表示 -->
+			<p>v value:<span class="v-slider_value">0.25</span></p>
+		</div>
+		<div id="deltaV">
+			<!-- スライダー3 -->
+			<input type="range" min="-30" max="30" step="1" value="20" id="dV-slider">
+			<!-- スライダーの値を表示 -->
+			<p>dV value:<span class="dV-slider_value">20</span></p>
+		</div>
+		<div id="compress_checkbox">
+			<!-- チェックボックス -->
+			<label for="compress">
+				<input type="checkbox" id="compress" checked="checked">
+				画像を圧縮して処理を行う
+			</label>
+			<p id="attention">(処理の軽減が期待できますが，画像が多少荒くなります)</p>
+		</div>
+		<input type="file" id="inputFile" accept="image/*">
+		<button onclick="process();">process!</button>
+		<button onclick="AllReset();">ALL RESET!</button>
+		<br />
+		
+		<!-- ロードしたローカルの画像 -->
+		<canvas id="load_Image" style="border: solid thin black;"></canvas>
+		
+		<!-- 処理した画像 -->
+		<canvas id="result_Image" style="border: solid thin black;"></canvas>
+		
+		<script src="./newScript3.js"></script>
+	</body>
+</html>

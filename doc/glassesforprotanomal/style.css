@@ -1,0 +1,108 @@
+* {
+	float: none;
+	position: static;
+}
+h1 {
+	font-size: 100%;
+}
+p {
+	font-size: 2em;
+}
+button {
+	font-size: 20px;
+	margin: 3px;
+}
+canvas {
+	border: solid thin black;
+}
+input {
+	margin: 2px;
+	font-size: 15px;
+}
+
+@media screen and (min-width:801px) {
+	h1 {
+		font-size: 2vw;
+	}
+	input[type="range"] {
+		width: 50%;
+	}
+	p {
+		margin: 0px;
+		font-size: 0.8em;
+	}
+	#attention {
+		font-size: 80%;
+	}
+	input[type="checkbox"] {
+		width: 30px;
+		height: 30px;
+	}
+	input[type="file"] {
+		width: auto;
+		height: auto;
+		// min-height: 40px;
+		font-size: 25px;
+	}
+	button {
+		font-size: 35px;
+	}
+	div {
+		margin-top:8px;
+		margin-bottom: 8px;
+		margin-left: 2px;
+		margin-right: 2px;
+		font-size: 2em;
+	}
+	canvas {
+		max-width: 45vw;
+		height: auto;
+	}
+}
+
+@media screen and (min-width:481px) and (max-width:800px){
+	canvas {
+		max-width: 45vw;
+		height: auto;
+	}
+	input[type="range"] {
+		width: 50%;
+	}
+	p {
+		// border: solid thin black;
+		margin: 0px;
+	}
+	#attention {
+		font-size: 80%;
+	}
+	div {
+		margin-top: 8px;
+		margin-bottom: 8px;
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+}
+
+@media screen and (max-width:480px){
+	canvas {
+		max-width: 100%;
+		height: auto;
+	}
+	input[type="range"] {
+		width: 100%;
+	}
+	p {
+		// border: solid thin black;
+		margin: 0px;
+		font-size: 1em;
+	}
+	#attention {
+		font-size: 50%;
+	}
+	div {
+		margin-top: 8px;
+		margin-bottom: 8px;
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+}
